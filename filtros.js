@@ -32,22 +32,28 @@
     });
   }
 
+  // var  lineas = document.querySelectorAll('[dv-filtros-campo="Linea"]');
+  // lineas.forEach(function(elemento){
+  //   elemento.setAttribute("cms-linea",elemento.innerHTML);
+  // })
 
-  // showCheckboxes(10);
+
+  showCheckboxesRange(10);
   
-  // function showCheckboxes(numToShow) {
-  //   // Obtiene todas las checkboxes
-  //   var checkboxes = document.querySelectorAll('[chk="Marca"]');
+  function showCheckboxesRange(numToShow) {
+    // Obtiene todas las checkboxes
+    var chkLinea = document.querySelectorAll('[dv-filtros-campo="Linea"]');
 
-  //   // Oculta todas las checkboxes
-  //   checkboxes.forEach(function (checkbox) {
-  //     checkbox.classList.add("hidden");
-  //   });
+    // Oculta todas las checkboxes
+    // chkLinea.forEach(function (checkbox) {
+    //   checkbox.classList.add("hidden");
+    // });
 
-  //   // Muestra las primeras 'numToShow' checkboxes
-  //   for (var i = 0; i < numToShow; i++) {
-  //     checkboxes[i].classList.remove("c-hidden");
-  //   }
-  // }
+    // Muestra las primeras 'numToShow' checkboxes
+    for (var i = 0; i < numToShow; i++) {
+      chkLinea[i].classList.remove("c-hidden");
+    }
+  }
 
+  
 })();
