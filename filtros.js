@@ -48,6 +48,7 @@
   //Filtro Top 10
   showCheckboxesRange(10);
   
+  
   function showCheckboxesRange(numToShow) {
     // Obtiene todas las checkboxes
     let chkLinea = document.querySelectorAll('[chk="Linea"]');
