@@ -42,7 +42,7 @@
   
   function showCheckboxesRange(numToShow) {
     // Obtiene todas las checkboxes
-    var chkLinea = document.querySelectorAll('[dv-filtros-campo="Linea"]');
+    var chkLinea = document.querySelectorAll('[chk="Linea"]');
 
     // Oculta todas las checkboxes
     // chkLinea.forEach(function (checkbox) {
@@ -55,5 +55,5 @@
     }
   }
 
-  
+
 })();
