@@ -41,8 +41,8 @@
 
   let txtFiltroLinea = document.querySelector('[txtFiltro="Linea"]')
   let chkLinea = document.querySelectorAll('[chk="Linea"]');
-  checkboxes.forEach(function(linea){
-    linea.setAttribute("Linea",linea.querySelector("span").innerHTML);
+  chkLinea.forEach(function(elemento){
+    elemento.setAttribute("Linea",elemento.querySelector("span").innerHTML);
   })
 
   //Filtro Top 10
