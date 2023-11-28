@@ -48,7 +48,7 @@
   //Filtro Top 10
   showCheckboxesRange(10);
   
-  
+
   function showCheckboxesRange(numToShow) {
     // Obtiene todas las checkboxes
     let chkLinea = document.querySelectorAll('[chk="Linea"]');
@@ -72,7 +72,9 @@
       let textoVisible = atributo.includes(filtroTexto);
 
       if(textoVisible){
-        chk.classList.remove("c-hidden")
+        chk.classList.remove("c-hidden");
+      }else{
+        chk.classList.add("c-hidden");
       }
 
     });
