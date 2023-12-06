@@ -73,8 +73,9 @@
 
     chkMarca.forEach(function (chk) {
       let atributo = chk.getAttribute("Marca".toLowerCase());
+      console.log(atributo);
       let textoVisible = atributo.includes(filtroTexto);
-
+      console.log(textoVisible);
       // if (filtroTexto.length > 0) {
       if (textoVisible) {
         chk.classList.remove("c-hidden");
