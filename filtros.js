@@ -72,7 +72,7 @@
     let filtroTexto = txtFiltroMarca.value.toLowerCase();
 
     chkMarca.forEach(function (chk) {
-      let atributo = chk.getAttribute("Marca".toLowerCase());
+      let atributo = chk.getAttribute("Marca").toLowerCase();
       console.log(atributo);
       let textoVisible = atributo.includes(filtroTexto);
       console.log(textoVisible);
