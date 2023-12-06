@@ -44,7 +44,7 @@
   //FILTRO LINEAS
 
   let txtFiltroMarca = document.querySelector('[txtFiltro="Marca"]')
-  let chkMarca = document.querySelectorAll('[chk="Marca"]');
+  let chkMarca = document.querySelectorAll('[showmarca="Si"]');
   // chkLinea.forEach(function (elemento) {
   //   elemento.setAttribute("Marca", elemento.querySelector("span").innerHTML);
   // })
@@ -75,15 +75,15 @@
       let atributo = chk.getAttribute("Marca".toLowerCase());
       let textoVisible = atributo.includes(filtroTexto);
 
-      if (filtroTexto.length > 0) {
-        if (textoVisible) {
-          chk.classList.remove("c-hidden");
-        } else {
-          chk.classList.add("c-hidden");
-        }
+      // if (filtroTexto.length > 0) {
+      if (textoVisible) {
+        chk.classList.remove("c-hidden");
       } else {
-        showCheckboxes(atributostoshow);
+        chk.classList.add("c-hidden");
       }
+      // } else {
+      //   showCheckboxes(atributostoshow);
+      // }
     });
   });
 
