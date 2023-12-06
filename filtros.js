@@ -24,12 +24,16 @@
     checkboxesToDisplay.forEach(function (atributo) {
       console.log(atributo);
       let checkbox = document.querySelector(`[marca="${atributo}"]`);
-      console.log(checkbox);
-      if (checkbox) {
-        console.log("entre");
-        checkbox.classList.remove("c-hidden");
-      }
+      checkbox.setAttribute("showmarca", "Si");
+      // if (checkbox) {
+      //   console.log("entre");
+      //   checkbox.classList.remove("c-hidden");
+      // }
     });
+    let showmarcas = document.querySelectorAll('[showmarca="Si"]');
+    showmarcas.forEach(function (element) {
+      element.classList.remove("c-hidden");
+    })
   }
 
   // let  lineas = document.querySelectorAll('[dv-filtros-campo="Linea"]');
@@ -77,7 +81,7 @@
         } else {
           chk.classList.add("c-hidden");
         }
-      }else{
+      } else {
         showCheckboxes(atributostoshow);
       }
     });
